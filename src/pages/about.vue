@@ -33,6 +33,9 @@ const features: Feature[] = [
   {
     title: '🖇️ Axios included',
   },
+  {
+    title: '🛠️ VueUse Function Utility',
+  },
 ]
 </script>
 
