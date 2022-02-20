@@ -1,11 +1,60 @@
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+![GitHub Repo stars](https://img.shields.io/github/stars/hasan-almujtaba/vue3-ssg-starter)
+![GitHub forks](https://img.shields.io/github/forks/hasan-almujtaba/vue3-ssg-starter)
 # Vue 3 + Typescript + Vite
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Vue 3 starter with typescript and vite for static site generation.
 
-## Recommended IDE Setup
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## Demo
 
-## Type Support For `.vue` Imports in TS
+[Demo](https://vue3-ssg-starter.vercel.app/)
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+
+## Features
+
+- ⚡️ Vue 3 SSG with yarn
+- 🎨 Tailwind CSS
+- 📚 Headless UI
+- 📁 File Based Routing
+- 📑 Layout System
+- 🍍 Pinia State Management
+- 📥 Auto import APIs
+- 📦 Auto import Components
+- 🖇️ Axios included
+
+
+## Try it now!
+
+### Github Template
+
+[Create repo from this template](https://github.com/hasan-almujtaba/vue3-ssg-starter/generate)
+
+### Clone to local
+
+```bash
+    npx degit hasan-almujtaba/vue3-ssg-starter my-app
+    cd my-app
+    yarn
+```
+    
+## Usage
+
+### Development
+
+Start local environment
+```bash
+    yarn dev
+```
+
+### Build
+
+To build the App, run
+```bash
+    yarn build
+```
+
+### Deploy to Vercel
+
+Go to [Vercel](https://vercel.com/new) and select your clone, OK along the way, and your App will be live in a minute.
+
