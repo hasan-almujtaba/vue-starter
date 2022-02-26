@@ -54,6 +54,8 @@ To build the App, run
     yarn build
 ```
 
+See [Vite SSG Initial State](https://github.com/antfu/vite-ssg#initial-state) for configuring initial state
+
 ### Deploy to Vercel
 
 Go to [Vercel](https://vercel.com/new) and select your clone, OK along the way, and your App will be live in a minute.
