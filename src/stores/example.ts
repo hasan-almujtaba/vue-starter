@@ -1,15 +1,15 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import type Example from '~/types/example.interface'
+import type ExampleInterface from '~/types/example.interface'
 
 export const useExample = defineStore('example', {
   state: () => ({
-    id: '',
-    userId: '',
+    id: 0,
+    userId: 0,
     title: '',
     body: '',
-  }),
+  } as ExampleInterface),
   actions: {
-    setExample(example: Example) {
+    setExample(example: ExampleInterface) {
       this.id = example.id
       this.userId = example.userId
       this.title = example.title

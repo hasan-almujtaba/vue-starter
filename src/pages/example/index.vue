@@ -1,20 +1,20 @@
 <script setup lang="ts">
 import api from '~/apis'
-import type Example from '~/types/example.interface'
+import type ExampleInterface from '~/types/example.interface'
 import { useExample } from '~/stores/example'
 
 const exampleStore = useExample()
-const response = ref<Example[]>([])
-const postTotal = ref(20)
-const posts = computed(() => response.value.filter((post: Example, i) => i <= postTotal.value))
+const response = ref<ExampleInterface[]>([])
+const postTotal = ref<Number>(20)
+const posts = computed(() => response.value.filter((post: ExampleInterface, i) => i <= postTotal.value))
 
 const getData = async() => {
-  const { data } = await api.get('posts')
+  const { data } = await api.get<ExampleInterface[]>('posts')
 
   response.value = data
 }
 
-const setPost = (post: Example) => exampleStore.setExample(post)
+const setPost = (post: ExampleInterface) => exampleStore.setExample(post)
 
 onMounted(() => {
   getData()
