@@ -9,12 +9,12 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <h1 class="text-xl lg:text-2xl text-blue-700">
-      {{ postStore.title || 'Untitled' }}
+  <div class="container mx-auto text-center">
+    <h1 class="text-xl lg:text-2xl text-blue-700 font-black mb-5">
+      {{ postStore.title || 'Title Here' }}
     </h1>
     <p>
-      {{ postStore.body || 'Empty Body' }}
+      {{ postStore.body || 'Content Here' }}
     </p>
     <base-button to="/example" class="mt-5">
       <i-mdi-arrow-left />

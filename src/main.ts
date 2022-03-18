@@ -1,7 +1,6 @@
 import { setupLayouts } from 'virtual:generated-layouts'
 import generatedRoutes from 'virtual:generated-pages'
 import { ViteSSG } from 'vite-ssg'
-import { createPinia } from 'pinia'
 import App from './App.vue'
 import '~/assets/css/main.css'
 
@@ -12,7 +11,8 @@ export const createApp = ViteSSG(
   App,
   // vue-router options
   { routes },
-  ({ app }) => {
-    app.use(createPinia())
+  (ctx) => {
+    // install all modules under `modules/`
+    Object.values(import.meta.globEager('./modules/*.ts')).forEach(i => i.install?.(ctx))
   },
 )

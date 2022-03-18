@@ -23,8 +23,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
-    <h1 class="text-2xl lg:text-4xl capitalize font-semibold bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-blue-700 mb-5">
+  <div class="container mx-auto">
+    <h1 class="text-2xl lg:text-3xl text-center capitalize font-black bg-gradient-to-r bg-clip-text text-transparent from-blue-500 to-blue-700 mb-5">
       fake json response
     </h1>
 
@@ -35,7 +35,7 @@ onMounted(() => {
     <example-dropdown class="mb-5 mt-3" @change:post-total="postTotal = $event" />
 
     <div class="flex flex-wrap gap-2">
-      <router-link v-for="(item, i) in posts" :key="i" :to="`/example/${item.id}`" as="div" class="bg-gray-200 p-2 rounded" @click="setPost(item)">
+      <router-link v-for="(item, i) in posts" :key="i" :to="`/example/${item.id}`" as="div" class="bg-gray-200 p-2 rounded-md transition hover:bg-blue-100 hover:text-blue-600" @click="setPost(item)">
         {{ item.title }}
       </router-link>
     </div>

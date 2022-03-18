@@ -11,6 +11,7 @@ declare module 'vue' {
     IMdiArrowRightThick: typeof import('~icons/mdi/arrow-right-thick')['default']
     IMdiChevronDown: typeof import('~icons/mdi/chevron-down')['default']
     IMdiCircleMedium: typeof import('~icons/mdi/circle-medium')['default']
+    IMdiHome: typeof import('~icons/mdi/home')['default']
     IMdiInformation: typeof import('~icons/mdi/information')['default']
     Menu: typeof import('@headlessui/vue')['Menu']
     MenuButton: typeof import('@headlessui/vue')['MenuButton']
