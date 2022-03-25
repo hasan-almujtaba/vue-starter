@@ -56,7 +56,7 @@ To build the App, run
 
 See [Vite SSG Initial State](https://github.com/antfu/vite-ssg#initial-state) for configuring initial state
 
-### Deploy to Vercel
+### Deploy to Netlify
 
-Go to [Vercel](https://vercel.com/new) and select your clone, OK along the way, and your App will be live in a minute.
+Go to [Netlify](https://app.netlify.com/start) and select your clone, OK along the way, and your App will be live in a minute.
 
