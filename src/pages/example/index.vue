@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import api from '~/apis'
 import type ExampleInterface from '~/types/example.interface'
-import { useExample } from '~/stores/example'
 
-const exampleStore = useExample()
 const response = ref<ExampleInterface[]>([])
 const postTotal = ref<Number>(20)
 const posts = computed(() => response.value.filter((post: ExampleInterface, i) => i <= postTotal.value))
@@ -14,10 +12,10 @@ const getData = async() => {
   response.value = data
 }
 
-const setPost = (post: ExampleInterface) => exampleStore.setExample(post)
+if (response.value.length === 0) getData()
 
-onMounted(() => {
-  getData()
+onServerPrefetch(async() => {
+  await getData()
 })
 
 </script>
@@ -35,7 +33,7 @@ onMounted(() => {
     <example-dropdown class="mb-5 mt-3" @change:post-total="postTotal = $event" />
 
     <div class="flex flex-wrap gap-2">
-      <router-link v-for="(item, i) in posts" :key="i" :to="`/example/${item.id}`" as="div" class="bg-gray-200 p-2 rounded-md transition hover:bg-blue-100 hover:text-blue-600" @click="setPost(item)">
+      <router-link v-for="(item, i) in posts" :key="i" :to="`/example/${item.id}`" as="div" class="bg-gray-200 p-2 rounded-md transition hover:bg-blue-100 hover:text-blue-600">
         {{ item.title }}
       </router-link>
     </div>

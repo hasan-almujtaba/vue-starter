@@ -1,20 +1,40 @@
 <script setup lang="ts">
-import { useExample } from '~/stores/example'
+import api from '~/apis'
+import type ExampleInterface from '~/types/example.interface'
 
-const postStore = useExample()
+const route = useRoute()
+
+const response = ref<ExampleInterface>({
+  body: '',
+  id: 0,
+  title: '',
+  userId: 0,
+})
+
+const getData = async() => {
+  const { data } = await api.get<ExampleInterface>(`posts/${route.params.example}`)
+
+  response.value = data
+}
+
+if (response.value.id === 0) getData()
+
+onServerPrefetch(async() => {
+  await getData()
+})
 
 useHead({
-  title: postStore.title,
+  title: response.value.title,
 })
 </script>
 
 <template>
   <div class="container mx-auto text-center">
     <h1 class="text-xl lg:text-2xl text-blue-700 font-black mb-5">
-      {{ postStore.title || 'Title Here' }}
+      {{ response.title }}
     </h1>
     <p>
-      {{ postStore.body || 'Content Here' }}
+      {{ response.body }}
     </p>
     <base-button to="/example" class="mt-5">
       <i-mdi-arrow-left />
