@@ -18,6 +18,10 @@ onServerPrefetch(async() => {
   await getData()
 })
 
+useHead({
+  title: 'Example',
+})
+
 </script>
 
 <template>

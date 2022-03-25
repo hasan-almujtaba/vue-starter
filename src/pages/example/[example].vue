@@ -24,7 +24,7 @@ onServerPrefetch(async() => {
 })
 
 useHead({
-  title: response.value.title,
+  title: computed(() => response.value.title),
 })
 </script>
 
