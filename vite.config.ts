@@ -8,6 +8,7 @@ import Components from 'unplugin-vue-components/vite'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import { HeadlessUiResolver } from 'unplugin-vue-components/resolvers'
+import api from './src/apis'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -38,4 +39,16 @@ export default defineConfig({
     }),
     Icons(),
   ],
+  ssgOptions: {
+    script: 'async',
+    formatting: 'minify',
+    async includedRoutes(paths) {
+      const { data: post } = await api.get('posts')
+      const staticPaths = paths.filter(path => !path.includes(':'))
+
+      const dynamicPosts = post.map((item: any) => `/example/${item.id}`)
+
+      return [...staticPaths, ...dynamicPosts]
+    },
+  },
 })
