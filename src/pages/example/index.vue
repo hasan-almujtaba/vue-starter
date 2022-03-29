@@ -37,7 +37,7 @@ useHead({
     <example-dropdown class="mb-5 mt-3" @change:post-total="postTotal = $event" />
 
     <div class="flex flex-wrap gap-2">
-      <router-link v-for="(item, i) in posts" :key="i" :to="`/example/${item.id}`" as="div" class="bg-gray-200 p-2 rounded-md transition hover:bg-blue-100 hover:text-blue-600">
+      <router-link v-for="(item, i) in posts" :key="i" :to="`/example/${item.id}`" as="div" class="bg-blue-100 dark:bg-blue-500 p-2 rounded-md transition hover:bg-blue-200 hover:text-blue-600 dark:hover:bg-blue-400 dark:hover:text-gray-200">
         {{ item.title }}
       </router-link>
     </div>

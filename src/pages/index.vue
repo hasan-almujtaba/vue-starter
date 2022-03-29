@@ -15,7 +15,7 @@ useHead({
       </div>
     </div>
 
-    <div class="mt-20 max-w-xl mx-auto flex flex-col lg:flex-row justify-center gap-2">
+    <div class="mt-10 max-w-xl mx-auto flex flex-col lg:flex-row justify-center gap-2">
       <base-button href="https://github.com/hasan-almujtaba/vue3-ssg-starter" target="_blank" class="w-full lg:w-40">
         <i-mdi-arrow-right-thick />
         <span>get started</span>

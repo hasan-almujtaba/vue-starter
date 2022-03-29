@@ -5,7 +5,7 @@ const props = defineProps<{
   target?: string
 }>()
 
-const cssClasses = 'px-5 py-3 bg-blue-100 rounded-full capitalize text-blue-600 flex items-center justify-center gap-x-2 transition duration-500 hover:bg-blue-200'
+const cssClasses = 'px-5 py-3 bg-blue-100 rounded-full capitalize text-blue-600 flex items-center justify-center gap-x-2 transition duration-500 hover:bg-blue-200 w-full'
 </script>
 
 <template>
