@@ -6,9 +6,9 @@
 Vue 3 starter with typescript and vite for static site generation.
 
 
-## Demo
+## Live Demo
 
-[Demo](https://vue3-ssg-starter.vercel.app/)
+[Live Demo](https://vue3-ssg.netlify.app)
 
 
 ## Features
