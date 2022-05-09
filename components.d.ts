@@ -7,10 +7,6 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     BaseButton: typeof import('./src/components/BaseButton.vue')['default']
     ExampleDropdown: typeof import('./src/components/ExampleDropdown.vue')['default']
-    ICarbonCode: typeof import('~icons/carbon/code')['default']
-    IMdiArrowRightThick: typeof import('~icons/mdi/arrow-right-thick')['default']
-    IMdiBrightness2: typeof import('~icons/mdi/brightness2')['default']
-    IMdiBrightness7: typeof import('~icons/mdi/brightness7')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ToggleDarkMode: typeof import('./src/components/ToggleDarkMode.vue')['default']
