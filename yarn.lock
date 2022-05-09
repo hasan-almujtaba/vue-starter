@@ -594,7 +594,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-sfc@npm:3.2.33, @vue/compiler-sfc@npm:^3.2.31, @vue/compiler-sfc@npm:^3.2.4":
+"@vue/compiler-sfc@npm:3.2.33, @vue/compiler-sfc@npm:^3.2.31, @vue/compiler-sfc@npm:^3.2.33, @vue/compiler-sfc@npm:^3.2.4":
   version: 3.2.33
   resolution: "@vue/compiler-sfc@npm:3.2.33"
   dependencies:
@@ -5599,6 +5599,7 @@ __metadata:
     "@iconify/json": ^2.1.39
     "@types/node": ^17.0.31
     "@vitejs/plugin-vue": ^2.3.2
+    "@vue/compiler-sfc": ^3.2.33
     "@vueuse/core": ^8.4.2
     "@vueuse/head": ^0.7.6
     autoprefixer: ^10.4.7
