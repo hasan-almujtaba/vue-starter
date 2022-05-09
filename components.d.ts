@@ -7,13 +7,7 @@ declare module 'vue' {
     BaseButton: typeof import('./src/components/BaseButton.vue')['default']
     ExampleDropdown: typeof import('./src/components/ExampleDropdown.vue')['default']
     ICarbonCode: typeof import('~icons/carbon/code')['default']
-    IMdiArrowLeft: typeof import('~icons/mdi/arrow-left')['default']
     IMdiArrowRightThick: typeof import('~icons/mdi/arrow-right-thick')['default']
-    IMdiChevronDown: typeof import('~icons/mdi/chevron-down')['default']
-    Menu: typeof import('@headlessui/vue')['Menu']
-    MenuButton: typeof import('@headlessui/vue')['MenuButton']
-    MenuItem: typeof import('@headlessui/vue')['MenuItem']
-    MenuItems: typeof import('@headlessui/vue')['MenuItems']
     ToggleDarkMode: typeof import('./src/components/ToggleDarkMode.vue')['default']
   }
 }
