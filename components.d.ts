@@ -5,20 +5,18 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AppBar: typeof import('./src/components/Base/AppBar.vue')['default']
+    AppBarTitle: typeof import('./src/components/Base/AppBarTitle.vue')['default']
     BaseButton: typeof import('./src/components/BaseButton.vue')['default']
+    Button: typeof import('./src/components/Base/Button.vue')['default']
     ExampleDropdown: typeof import('./src/components/ExampleDropdown.vue')['default']
-    ICarbonCode: typeof import('~icons/carbon/code')['default']
-    IMdiArrowLeft: typeof import('~icons/mdi/arrow-left')['default']
-    IMdiArrowRightThick: typeof import('~icons/mdi/arrow-right-thick')['default']
+    Fab: typeof import('./src/components/Base/Fab.vue')['default']
     IMdiBrightness2: typeof import('~icons/mdi/brightness2')['default']
     IMdiBrightness7: typeof import('~icons/mdi/brightness7')['default']
-    IMdiChevronDown: typeof import('~icons/mdi/chevron-down')['default']
-    Menu: typeof import('@headlessui/vue')['Menu']
-    MenuButton: typeof import('@headlessui/vue')['MenuButton']
-    MenuItem: typeof import('@headlessui/vue')['MenuItem']
-    MenuItems: typeof import('@headlessui/vue')['MenuItems']
+    IMdiGithub: typeof import('~icons/mdi/github')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Spacer: typeof import('./src/components/Base/Spacer.vue')['default']
     ToggleDarkMode: typeof import('./src/components/ToggleDarkMode.vue')['default']
   }
 }
