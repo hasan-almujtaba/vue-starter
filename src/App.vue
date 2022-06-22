@@ -1,10 +1,3 @@
-<script
-  setup
-  lang="ts"
->
-const classes = computed(() => ['bg-[color:var(--background)]', 'duration-200'])
-</script>
-
 <template>
-  <RouterView :class="classes" />
+  <RouterView class="bg-[color:var(--background)] duration-200 min-h-screen" />
 </template>

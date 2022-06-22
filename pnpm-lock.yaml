@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/roboto': ^4.5.7
   '@hasan-almujtaba/eslint-config': ^0.0.1
   '@headlessui/vue': ^1.6.4
   '@iconify/json': ^2.1.58
@@ -28,6 +29,7 @@ specifiers:
   vue-tsc: ^0.34.17
 
 dependencies:
+  '@fontsource/roboto': 4.5.7
   '@headlessui/vue': 1.6.4_vue@3.2.37
   '@vueuse/core': 8.6.0_vue@3.2.37
   '@vueuse/head': 0.7.6_vue@3.2.37
@@ -103,6 +105,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@fontsource/roboto/4.5.7:
+    resolution: {integrity: sha512-m57UMER23Mk6Drg9OjtHW1Y+0KPGyZfE5XJoPTOsLARLar6013kJj4X2HICt+iFLJqIgTahA/QAvSn9lwF1EEw==}
+    dev: false
 
   /@hasan-almujtaba/eslint-config/0.0.1_ud6rd4xtew5bv4yhvkvu24pzm4:
     resolution: {integrity: sha512-dyzegUTo2bk1IBDfS96+nTHAlCWaXJn8ASYgcHW8SFYZAa1T0VABUhJ58SimG7qkljOt0gJeYjFAdamJX+prqg==}
