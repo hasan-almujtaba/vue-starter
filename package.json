@@ -8,6 +8,7 @@
     "lint": "eslint \"**/*.{vue,ts,js}\""
   },
   "dependencies": {
+    "@fontsource/roboto": "^4.5.7",
     "@headlessui/vue": "^1.6.4",
     "@vueuse/core": "^8.6.0",
     "@vueuse/head": "^0.7.6",
