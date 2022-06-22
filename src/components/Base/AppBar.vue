@@ -37,6 +37,7 @@ const baseClass = [
   'fixed',
   'inset-x-0',
   'z-[5]',
+  'top-0',
 ]
 
 /**
