@@ -1,29 +1,35 @@
-<script setup lang="ts">
+<script
+  setup
+  lang="ts"
+>
 useHead({
   title: 'Home',
 })
 </script>
 
 <template>
-  <div class="container py-10">
-    <div class="text-center">
-      <h1 class="text-3xl font-black text-center text-blue-600">
-        Vue 3 SSG Starter
-      </h1>
-      <div class="font-light tracking-widest text-blue-400">
-        Scaffolding Vue 3 Project With Ease
+  <div class="px-10 pt-20 pb-10">
+    <!-- Title & Subtitle -->
+    <div class="text-center text-[color:var(--on-background)]">
+      <h1 class="text-3xl lg:text-4xl font-bold">Vue Starter</h1>
+      <div class="tracking-widest lg:text-xl italic font-light">
+        Opinionated Vue Starter
       </div>
     </div>
+    <!-- Title & Subtitle -->
 
-    <div class="flex flex-col justify-center max-w-xl gap-2 mx-auto mt-10 lg:flex-row">
-      <BaseButton href="https://github.com/hasan-almujtaba/vue3-ssg-starter" target="_blank" class="w-full lg:w-40">
-        <i-mdi-arrow-right-thick />
-        <span>get started</span>
-      </BaseButton>
-      <BaseButton to="example" class="w-full lg:w-40">
-        <i-carbon-code />
-        <span>example</span>
-      </BaseButton>
+    <!-- Feature list -->
+    <FeatureList class="mt-10 mb-5" />
+    <!-- Feature list -->
+
+    <!-- Example link -->
+    <div class="text-center">
+      <RouterLink
+        to="/examples"
+        class="text-[color:var(--on-background)] hover:underline"
+        >See example in action</RouterLink
+      >
     </div>
+    <!-- Example link -->
   </div>
 </template>

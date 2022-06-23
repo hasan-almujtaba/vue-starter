@@ -4,7 +4,10 @@
     <AppBar>
       <AppBarTitle> Vue Starter </AppBarTitle>
       <Spacer />
-      <Button>
+      <Button
+        href="https://github.com/hasan-almujtaba/vue-starter"
+        target="_blank"
+      >
         <IMdiGithub class="w-[18px] h-[18px]" />
         View on Github
       </Button>

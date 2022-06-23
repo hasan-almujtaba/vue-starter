@@ -11,6 +11,8 @@ declare module '@vue/runtime-core' {
     Button: typeof import('./src/components/Base/Button.vue')['default']
     ExampleDropdown: typeof import('./src/components/ExampleDropdown.vue')['default']
     Fab: typeof import('./src/components/Base/Fab.vue')['default']
+    FeatureCard: typeof import('./src/components/Feature/FeatureCard.vue')['default']
+    FeatureList: typeof import('./src/components/Feature/FeatureList.vue')['default']
     IMdiBrightness2: typeof import('~icons/mdi/brightness2')['default']
     IMdiBrightness7: typeof import('~icons/mdi/brightness7')['default']
     IMdiGithub: typeof import('~icons/mdi/github')['default']
