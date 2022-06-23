@@ -1,21 +1,33 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import type ExampleInterface from '~/types/example.interface'
+import { Post } from '~/types/example'
+import api from '~/apis/index'
 
-export const useExample = defineStore('example', {
-  state: () => ({
-    id: 0,
-    userId: 0,
-    title: '',
-    body: '',
-  } as ExampleInterface),
-  actions: {
-    setExample(example: ExampleInterface) {
-      this.id = example.id
-      this.userId = example.userId
-      this.title = example.title
-      this.body = example.body
-    },
-  },
+export const useExample = defineStore('example', () => {
+  /**
+   * Collection of post
+   */
+  const posts = ref<Post[]>([])
+
+  /**
+   * Fetch posts from api and set to state
+   */
+  const getPosts = async () => {
+    const { data } = await api.get('/posts')
+    posts.value = data
+  }
+
+  /**
+   * Delete post from state
+   */
+  const deletePost = (id: number) => {
+    posts.value = posts.value.filter((post) => post.id !== id)
+  }
+
+  return {
+    posts,
+    getPosts,
+    deletePost,
+  }
 })
 
 if (import.meta.hot)
