@@ -1,3 +1,19 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": [
+    "composables",
+    "fontsource",
+    "headlessui",
+    "pinia",
+    "roboto",
+    "semibold",
+    "tailwindcss"
+  ],
+  "todohighlight.keywords": [
+    {
+      "text": "WARNING:",
+      "backgroundColor": "#e74c3c",
+      "color": "#fff"
+    }
+  ]
 }
