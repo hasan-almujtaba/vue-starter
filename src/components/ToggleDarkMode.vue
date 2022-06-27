@@ -4,7 +4,7 @@
 >
 import { isDark, toggleDark } from '~/composables/dark'
 
-const classes = ref(['w-[24px]', 'h-[24px]'])
+const iconClass = ref(['w-[24px]', 'h-[24px]'])
 </script>
 
 <template>
@@ -22,11 +22,11 @@ const classes = ref(['w-[24px]', 'h-[24px]'])
     >
       <IMdiBrightness7
         v-if="isDark"
-        :class="classes"
+        :class="iconClass"
       />
       <IMdiBrightness2
         v-else
-        :class="classes"
+        :class="iconClass"
       />
     </Transition>
   </Fab>
