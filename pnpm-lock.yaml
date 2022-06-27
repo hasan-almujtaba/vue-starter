@@ -21,6 +21,7 @@ specifiers:
   unplugin-icons: ^0.14.3
   unplugin-vue-components: ^0.19.6
   vite: ^2.9.10
+  vite-plugin-environment: ^1.1.1
   vite-plugin-pages: ^0.23.0
   vite-plugin-vue-layouts: ^0.6.0
   vite-ssg: ^0.20.1
@@ -53,6 +54,7 @@ devDependencies:
   unplugin-icons: 0.14.3_vite@2.9.10
   unplugin-vue-components: 0.19.6_vite@2.9.10+vue@3.2.37
   vite: 2.9.10_sass@1.52.2
+  vite-plugin-environment: 1.1.1_vite@2.9.10
   vite-plugin-pages: 0.23.0_vite@2.9.10
   vite-plugin-vue-layouts: 0.6.0_kbfjw6lgthaqdqlvuvwmyv6z6q
   vite-ssg: 0.20.1_dmhfitb4nw3pf34cluram37wjy
@@ -2843,6 +2845,14 @@ packages:
 
   /v8-compile-cache/2.3.0:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
+    dev: true
+
+  /vite-plugin-environment/1.1.1_vite@2.9.10:
+    resolution: {integrity: sha512-kbUAZaqmiHap+7aqRfMolRGzCGhJSU45qDjgLM11DpSDzmiI5JL4EzdyAIUZ4g0WrO88EV2cdcq2fpNYuJ17Pg==}
+    peerDependencies:
+      vite: ^2.7
+    dependencies:
+      vite: 2.9.10_sass@1.52.2
     dev: true
 
   /vite-plugin-pages/0.23.0_vite@2.9.10:
