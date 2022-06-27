@@ -48,6 +48,9 @@ const baseClass = [
   'drop-shadow-[0px_1px_3px_rgba(0,0,0,0.3)]',
 ]
 
+/**
+ * Component class
+ */
 const classes = computed(() => [
   ...baseClass,
   ...[props.absolute && 'absolute'],

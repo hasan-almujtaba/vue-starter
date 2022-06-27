@@ -49,6 +49,9 @@ const outlinedClass = [
   'border-[color:var(--outline)]',
 ]
 
+/**
+ * Component class
+ */
 const classes = computed(() => [
   ...baseClass,
   ...(props.outlined ? outlinedClass : []),
