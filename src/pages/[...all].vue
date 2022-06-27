@@ -1,3 +1,12 @@
+<script
+  setup
+  lang="ts"
+>
+useHead({
+  title: 'Page Not Found',
+})
+</script>
+
 <template>
   <div class="h-full flex items-center justify-center">
     <div class="flex items-center text-[color:var(--on-background)] gap-x-2">
