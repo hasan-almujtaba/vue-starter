@@ -18,7 +18,7 @@ const props = defineProps<PropsInterface>()
 
 <template>
   <div
-    class="rounded border border-[color:var(--outline)] p-2 w-96 max-w-full mx-auto flex items-center gap-x-2 transition hover:translate-x-10"
+    class="rounded border border-[color:var(--outline)] p-2 w-full lg:w-96 mx-auto flex items-center gap-x-2 lg:transition lg:hover:translate-x-10"
   >
     <div>
       {{ props.emoji }}
