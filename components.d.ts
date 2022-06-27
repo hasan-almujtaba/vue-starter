@@ -15,6 +15,7 @@ declare module '@vue/runtime-core' {
     FeatureList: typeof import('./src/components/Feature/FeatureList.vue')['default']
     IMdiBrightness2: typeof import('~icons/mdi/brightness2')['default']
     IMdiBrightness7: typeof import('~icons/mdi/brightness7')['default']
+    IMdiDelete: typeof import('~icons/mdi/delete')['default']
     IMdiGithub: typeof import('~icons/mdi/github')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
