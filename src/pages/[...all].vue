@@ -1,14 +1,15 @@
 <template>
-  <div class="text-center">
-    <h1 class="text-blue-600 text-2xl lg:text-4xl font-black">
-      Not Found
-    </h1>
-    <p class="mb-5 text-blue-400">
-      Your requested url was not found
-    </p>
-    <base-button to="/">
-      <i-mdi-home />
-      back to home
-    </base-button>
+  <div class="h-full flex items-center justify-center">
+    <div class="flex items-center text-[color:var(--on-background)] gap-x-2">
+      <div class="text-2xl border-r border-[color:var(--outline)] px-1">
+        404
+      </div>
+      <div>Page Not Found</div>
+    </div>
   </div>
 </template>
+
+<route lang="yaml">
+meta:
+  layout: 404
+</route>

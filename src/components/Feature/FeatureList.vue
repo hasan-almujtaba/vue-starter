@@ -12,11 +12,11 @@ const features = ref([
   },
   {
     emoji: '📁',
-    text: 'File based routing with vite-plugin-pages',
+    text: 'File based routing',
   },
   {
     emoji: '🧱',
-    text: 'Layout system with vite-plugin-vue-layouts',
+    text: 'Layout system',
   },
   {
     emoji: '🍍',
@@ -43,8 +43,8 @@ const features = ref([
     text: 'Safe typing with typescript',
   },
   {
-    emoji: '🎤',
-    text: 'Code spell checker with vscode extension',
+    emoji: '📃',
+    text: 'Generate static site on deployment',
   },
 ])
 </script>

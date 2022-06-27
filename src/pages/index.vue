@@ -8,7 +8,7 @@ useHead({
 </script>
 
 <template>
-  <div class="px-10 pt-20 pb-10">
+  <div class="px-4 pt-20 pb-10">
     <!-- Title & Subtitle -->
     <div class="text-center text-[color:var(--on-background)]">
       <h1 class="text-3xl lg:text-4xl font-bold">Vue Starter</h1>
