@@ -3,6 +3,7 @@ import generatedRoutes from 'virtual:generated-pages'
 import { ViteSSG } from 'vite-ssg'
 import App from './App.vue'
 import '~/assets/css/main.css'
+import { Module } from '~/types/module'
 
 const routes = setupLayouts(generatedRoutes)
 
@@ -13,8 +14,8 @@ export const createApp = ViteSSG(
   { routes },
   (ctx) => {
     // install all modules under `modules/`
-    Object.values(import.meta.globEager('./modules/*.ts')).forEach((i) =>
-      i.install?.(ctx)
-    )
+    Object.values(
+      import.meta.glob<{ install: Module }>('./modules/*.ts', { eager: true })
+    ).forEach((i) => i.install?.(ctx))
   }
 )
