@@ -7,21 +7,8 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    AppBar: typeof import('./src/components/Base/AppBar.vue')['default']
-    AppBarTitle: typeof import('./src/components/Base/AppBarTitle.vue')['default']
-    Button: typeof import('./src/components/Base/Button.vue')['default']
     Card: typeof import('./src/components/Base/Card/index.vue')['default']
-    ExampleCard: typeof import('./src/components/Example/ExampleCard.vue')['default']
-    ExampleList: typeof import('./src/components/Example/ExampleList.vue')['default']
-    Fab: typeof import('./src/components/Base/Fab.vue')['default']
-    FeatureCard: typeof import('./src/components/Feature/FeatureCard.vue')['default']
-    FeatureList: typeof import('./src/components/Feature/FeatureList.vue')['default']
-    IMdiBrightness2: typeof import('~icons/mdi/brightness2')['default']
-    IMdiBrightness7: typeof import('~icons/mdi/brightness7')['default']
-    IMdiGithub: typeof import('~icons/mdi/github')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Spacer: typeof import('./src/components/Base/Spacer.vue')['default']
-    ToggleDarkMode: typeof import('./src/components/ToggleDarkMode.vue')['default']
   }
 }
