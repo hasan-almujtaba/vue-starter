@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite-ssg build",
     "preview": "vite preview",
-    "lint": "eslint \"**/*.{vue,ts,js}\""
+    "lint": "eslint \"**/*.{vue,ts,js}\"",
+    "format": "prettier --write \"**/*.{vue,ts,js}\"",
+    "prepare": "husky install",
+    "type:check": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@fontsource/roboto": "^4.5.8",
@@ -26,6 +29,8 @@
     "@vitejs/plugin-vue": "^3.2.0",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.28.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "postcss": "^8.4.19",
     "sass": "^1.56.1",
     "tailwindcss": "^3.2.4",
