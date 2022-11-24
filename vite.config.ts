@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import path from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -9,7 +11,6 @@ import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import { HeadlessUiResolver } from 'unplugin-vue-components/resolvers'
 
-/** @type {import('vite').UserConfig} */
 export default defineConfig({
   resolve: {
     alias: {
@@ -44,5 +45,9 @@ export default defineConfig({
 
     //   return [...staticPaths, ...dynamicPosts]
     // },
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
   },
 })
