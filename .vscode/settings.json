@@ -15,5 +15,6 @@
       "backgroundColor": "#e74c3c",
       "color": "#fff"
     }
-  ]
+  ],
+  "css.lint.unknownAtRules": "ignore"
 }

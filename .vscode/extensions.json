@@ -7,6 +7,9 @@
     "streetsidesoftware.code-spell-checker",
     "bungcip.better-toml",
     "bradlc.vscode-tailwindcss",
-    "wayou.vscode-todo-highlight"
+    "wayou.vscode-todo-highlight",
+    "csstools.postcss",
+    "vue.vscode-typescript-vue-plugin",
+    "vivaxy.vscode-conventional-commits"
   ]
 }
